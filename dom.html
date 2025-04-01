@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let h1 = document.createElement("h1");
+      h1.innerHTML = "Kamrul Hasan";
+      h1.style.color = "red";
+
+      h1.style.fontSize = "40px";
+      h1.style.fontWeight = "bold";
+      h1.style.textTransform = "uppercase";
+
+      h1.style.textDecoration = "underline";
+      h1.style.padding = "20px";
+      h1.style.textShadow = "1px 1px 2px grey";
+      h1.style.marginBottom = "20px";
+      h1.style.textIndent = "50px";
+      h1.style.wordWrap = "break-word";
+      h1.style.textJustify = "center";
+
+      h1.style.textOverflow = "ellipsis";
+
+      h1.style.letterSpacing = "2px";
+      h1.style.lineHeight = "1.5";
+      h1.style.borderRadius = "10px";
+
+      h1.style.backgroundColor = "yellow";
+      h1.style.border = "2px solid black";
+      h1.style.boxShadow = "5px 5px 10px grey";
+      h1.style.transition = "all 1s";
+      h1.style.cursor = "pointer";
+      h1.style.transitionDelay = "0.5s";
+      h1.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+        alert("Right click is disabled!");
+      });
+      h1.addEventListener("mousedown", function () {
+        h1.style.color = "pink";
+      });
+      h1.addEventListener("dblclick", function () {
+        h1.style.color = "purple";
+      });
+      h1.addEventListener("mouseout", function () {
+        h1.style.color = "red";
+      });
+      h1.addEventListener("mouseover", function () {
+        h1.style.color = "green";
+      });
+      h1.addEventListener("click", function () {
+        h1.style.color = "blue";
+      });
+      h1.style.textShadow = "2px 2px 4px grey";
+      h1.style.fontFamily = "Arial, sans-serif";
+      document.body.style.marginTop = "20px";
+      document.body.style.textAlign = "center";
+      document.body.style.backgroundColor = "lightblue";
+      document.body.appendChild(h1);
+      let div1 = document.createElement("div");
+      document.body.appendChild(div1);
+      div1.setAttribute("id", "demo");
+      let divDemo = document.getElementById("demo");
+      document.getElementById("demo").innerHTML = "Bangladesh";
+    </script>
+  </body>
+</html>
